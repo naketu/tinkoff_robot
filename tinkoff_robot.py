@@ -257,7 +257,7 @@ class SandboxTester:
 
             print("ERROR OCCURED AT ASK POST ORDER, reposting...")
 
-            r = self.place_order_bid(price, quantity, time_c)
+            r = self.place_order_ask(price, quantity, time_c)
             return r
 
     def place_order_bid(self, price, quantity, time_c=0):
